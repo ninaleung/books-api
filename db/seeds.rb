@@ -4,7 +4,8 @@
     :author => Faker::Book.author,
     :publisher => Faker::Book.publisher,
     :genre => Faker::Book.genre,
-    :year => rand(1900..2015)
+    :year => rand(1900..2015),
+    :details => false
     )
 end
 

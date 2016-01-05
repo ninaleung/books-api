@@ -4,9 +4,9 @@
     <h1>Interesting Books</h1>
     <h3>Number of books: {{books.length}}</h3>
       <div ng-repeat="book in books">
-      <h3 ng-click="toggleDetails">Title: {{book.title}}</h3>
+      <h3 ng-click="toggleDetails($index)">Title: {{book.title}}</h3>
       <h4>Author: {{book.author}}</h4>
-      <h4 ng-if="showDetails">Pubilisher: {{book.pubilisher}}<br>
+      <h4 ng-if="book.details">Publisher: {{book.publisher}}<br>
       Genre: {{book.genre}}<br>
       Year: {{book.year}}</h4>
       <hr>

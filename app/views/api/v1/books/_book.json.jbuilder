@@ -4,3 +4,4 @@ json.author book.author
 json.publisher book.publisher
 json.genre book.genre
 json.year book.year
+json.details book.details

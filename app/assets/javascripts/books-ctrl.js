@@ -8,7 +8,13 @@
         $scope.books = response.data;
       });
 
-    
+      $scope.toggleDetails = function(inputIndex) {
+        var inputBook = $scope.books[inputIndex];
+        inputBook.details = !inputBook.details;
+        console.log(inputBook.details);
+      };
+
       window.$scope = $scope;
+    
     });
 })();
